@@ -17,7 +17,7 @@ auto to_hex(const unsigned char (&bytes)[N]) -> std::string
     }
     return sout.str();
 }
-template<int N>
+template<size_t N>
 auto to_hex(std::array<unsigned char,N> bytes) -> std::string
 {
     std::ostringstream sout;
