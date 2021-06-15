@@ -1,10 +1,11 @@
 #include "fileutil.hpp"
+#include <fstream>
+#include <iostream>
 
 namespace sieve {
 namespace util {
 
-
-std::string FILEUTIL_DLL read_file(const std::string &file_path) noexcept
+FILEUTIL_DLL std::string read_file(const std::string &file_path) noexcept
 {
     std::string dest;
     try {

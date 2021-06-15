@@ -2,8 +2,6 @@
 #define B6160D72_D8D1_41EC_9DE8_80F77B822B3D
 
 #include <string>
-#include <fstream>
-#include <iostream>
 
 #ifdef WIN32
     #ifdef FILEUTIL_EXPORT

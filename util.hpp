@@ -22,7 +22,7 @@
 namespace sieve {
 namespace util {
 template<int N>
-auto UTIL_DLL to_hex(const unsigned char (&bytes)[N]) -> std::string
+UTIL_DLL auto to_hex(const unsigned char (&bytes)[N]) -> std::string
 {
     std::ostringstream sout;
     sout << std::hex << std::setfill('0');
@@ -32,7 +32,7 @@ auto UTIL_DLL to_hex(const unsigned char (&bytes)[N]) -> std::string
     return sout.str();
 }
 template<size_t N>
-auto UTIL_DLL to_hex(std::array<unsigned char,N> bytes) -> std::string
+UTIL_DLL auto to_hex(std::array<unsigned char,N> bytes) -> std::string
 {
     std::ostringstream sout;
     sout << std::hex << std::setfill('0');
@@ -43,7 +43,7 @@ auto UTIL_DLL to_hex(std::array<unsigned char,N> bytes) -> std::string
 }
 
 template<typename T>
-T UTIL_DLL * to_array(std::vector<T> &source, size_t *size = nullptr)
+UTIL_DLL T * to_array(std::vector<T> &source, size_t *size = nullptr)
 {
     auto arr_size = source.size();
     T *dest = new T[arr_size];
