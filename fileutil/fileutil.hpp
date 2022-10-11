@@ -3,23 +3,9 @@
 
 #include <string>
 
-#ifdef WIN32
-    #ifdef FILEUTIL_EXPORT
-        #define FILEUTIL_DLL __declspec(dllexport)
-    #else
-        #ifdef _LIB
-            #define FILEUTIL_DLL
-        #else
-            #define FILEUTIL_DLL __declspec(dllimport)
-        #endif
-    #endif
-#else
-    #define FILEUTIL_DLL
-#endif
-
 namespace sieve {
 namespace util {
-std::string FILEUTIL_DLL read_file(const std::string &file_path) noexcept;
+std::string read_file(const std::string &file_path) noexcept;
 }
 }
 

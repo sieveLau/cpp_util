@@ -4,8 +4,7 @@
 
 namespace sieve {
 namespace util {
-
-FILEUTIL_DLL std::string read_file(const std::string &file_path) noexcept
+std::string read_file(const std::string &file_path) noexcept
 {
     std::string dest;
     try {
